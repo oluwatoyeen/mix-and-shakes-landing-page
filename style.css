@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 7rem;
+}
+nav img{
+    width: 5rem;
+    padding-top: 2rem;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+header{
+    background-image: url(./image/bartender-making-delicious-refreshing-cocktail.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Hero{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.Hero h1{
+    font-size: 4rem;
+    margin-top: 50vh;
+    text-shadow: solid black 80px ;
+    background: linear-gradient(to right, red, purple, white, rgb(3, 99, 43));
+    background-clip: text;
+    color: transparent;
+    animation: flowingtext 5s infinite;
+}
+@keyframes flowingtext{
+    0%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+.Hero p{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.Hero button{
+    width: 8rem;
+    margin-left: 35%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding-top: 0.2rem;
+    margin-top: 1rem;
+}
+
+.welcome{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.welcome button{
+    margin-top: 1rem;
+    width: 9rem;
+    background-color: rgb(255, 207, 207);
+    border-style: none;
+    margin-left: 35%;
+}
+.welcome marquee{
+    color: red;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.welcome h1{
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+.welcome h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.picture img{
+    width: 90%;
+    margin-left: 2rem;
+}
+
+.picture{
+    margin-top: 1rem;
+    margin-left: 0;
+      display: grid;
+      grid-template-columns: 30% 30%;
+    align-items: center;
+    justify-content: center;
+       
+    
+    }
+
+.price{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.one{
+    border-radius: 10px;
+    background-color: rgb(205, 255, 158);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    margin-left: 15rem;
+    padding-bottom: 1rem;
+}
+
+.price h4{
+    font-size: 2rem;
+}
+
+.second{
+    border-radius: 10px;
+    background-color: rgb(205, 255, 158);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.third{
+    border-radius: 10px;
+    background-color: rgb(205, 255, 158);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.want{
+    background-image: url(./image/cocktail-glass-with-colorful-fruity-drink-bar-generative-ai.jpg);
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.want{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.want h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.want p{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.want button{
+    width: 10rem;
+    margin-left: 15rem;
+    border-style: none;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+footer{
+    background-color:rgb(205, 255, 158) ;
+}
+
+@media (max-width: 960px){
+    .one{
+        margin-left: 10rem;
+    }
+    .second{
+        margin-left: 6rem;
+    }
+
+    .picture img{
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .price h4{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .price p{
+        font-size: 0.7rem;
+    }
+    
+    .one{
+        border-radius: 10px;
+        background-color: rgb(205, 255, 158);
+        width: 50%;
+        height: 8rem;
+        text-align: center;
+        align-items: center;}
+}
+
+@media (max-width: 900px){
+    .welcome h1{
+        font-size: 3rem;
+        font-family: monospace;
+    }
+
+    .welcome h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 800px){
+    .want h1{
+        font-size: 2rem;
+        color: white;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 750px){
+    .want p{
+        font-size: 0.7rem;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .want button{
+        width: 10rem;
+        margin-left: 10rem;
+        border-style: none;
+    }
+
+    .Hero h1{
+        font-size: 4rem;
+        margin-top: 50vh;
+        text-shadow: solid black 80px ;}
+    
+        .Hero button{
+            color: white;
+            padding-top: 0.2rem;
+            margin-top: 0;
+        }
+        .welcome marquee{
+            color: red;
+            font-size: 1rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .footer{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 5rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+}
+
+@media (max-width: 680px){
+    .one{
+        margin-left: 10rem;
+    }
+    .second{
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 620px){
+.footer h3{
+    font-size: 1rem;
+}
+
+.footer p{
+    font-size: 0.6rem;
+}
+
+.welcome p{
+    font-size: 0.8rem;
+}
+.welcome h1{
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+.welcome h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.one{
+    margin-left: 9rem;
+}
+.second{
+    margin-left: 4.5rem;
+}
+}
+
+@media (max-width: 600px){
+
+    .footer{
+        display: grid;
+        grid-template-columns: 25% 40% 30%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .price{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .one{
+        border-radius: 10px;
+        background-color: rgb(205, 255, 158);
+        width: 50%;
+        height: 100%;}
+
+        header{
+            background-image: url(./image/bartender-making-delicious-refreshing-cocktail.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: fit;
+            background-repeat: no-repeat;
+        }
+
+        .want{
+            background-image: url(./image/cocktail-glass-with-colorful-fruity-drink-bar-generative-ai.jpg);
+            background-size: cover;
+            height: 70vh;
+            width: 100vw;
+            margin-top: 2rem;
+        }
+        
+}
+
+@media (max-width: 550px){
+    .one, .second, .third{
+        padding-bottom: 1rem;
+    }
+    .want h1{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .want button{
+        width: 10rem;
+        margin-left: 30%;
+        border-style: none;
+    }
+    .price{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .one{
+        border-radius: 10px;
+        background-color: rgb(205, 255, 158);
+        width: 50%;
+        height: 100%;}
+
+        .picture{
+        margin-top: 1rem;
+        margin-left: 0;
+          display: grid;
+          grid-template-columns: 30% 30%;
+        align-items: center;
+        justify-content: center;
+           
+        
+        }
+
+        .picture img{
+            width: 90%;
+            margin-left: 0;
+        }
+
+        .one{
+            border-radius: 10px;
+            background-color: rgb(205, 255, 158);
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+            margin-left: 3rem}
+
+            .second{
+                border-radius: 10px;
+                background-color: rgb(205, 255, 158);
+                width: 50%;
+                height: 100%;
+                text-align: center;
+                align-items: center;
+                margin-left: 2rem;
+            }
+
+            .Hero h1{
+                font-size: 3rem;
+                margin-top: 50vh;
+                text-shadow: solid rgb(36, 31, 31) 80px ;}
+
+                .footer{
+                    display: grid;
+                    grid-template-columns: 25% 40% 30%;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-left: 2rem;
+                    padding-bottom: 1rem;
+                    padding-top: 1rem;
+                }
+
+                .price h4{
+                    font-size: 0.8rem;
+                    padding-top: 1rem;
+                }
+}
+
+@media (max-width: 460px){
+    .footer{
+        display: grid;
+        grid-template-columns: 25% 40% 20%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+    .footer{
+        display: grid;
+        grid-template-columns: 25% 45% 20%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 4rem;
+    }
+}
+
+
+@media (max-width: 390px){
+    .footer{
+        display: grid;
+        grid-template-columns: 25% 48% 20%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .footer h3{
+        font-size: 0.8rem;
+    }
+    
+    .footer p{
+        font-size: 0.5rem;
+    }
+    
+   .want p{
+    font-size: 0.5rem;
+   } 
+}
